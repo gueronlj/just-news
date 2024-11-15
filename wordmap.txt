@@ -1,0 +1,455 @@
+attractive: 2
+
+bald: 1
+
+beautiful: 4
+
+chubby: 2
+
+clean*: 0
+
+dazzling: 5
+
+drab: 1
+
+elegant: 3
+
+fancy: 2
+
+fit: 3
+
+flabby: 2
+
+glamorous: 4
+
+gorgeous: 5
+
+handsome: 3
+
+long*: 0
+
+magnificent: 5
+
+muscular: 4
+
+plain: 1
+
+plump: 2
+
+quaint: 2
+
+scruffy: 2
+
+shapely: 3
+
+short*: 0
+
+skinny: 2
+
+stocky: 2
+
+ugly: 3
+
+unkempt: 2
+
+unsightly: 3
+
+alive*: 0
+
+better: 2
+
+careful: 2
+
+clever: 3
+
+dead*: 0
+
+easy: 1
+
+famous: 4
+
+gifted: 3
+
+hallowed: 5
+
+helpful: 2
+
+important: 3
+
+inexpensive: 1
+
+mealy: 1
+
+mushy: 2
+
+odd: 2
+
+poor: 2
+
+powerful: 4
+
+rich: 4
+
+shy: 2
+
+tender: 2
+
+unimportant: 1
+
+uninterested: 1
+
+vast: 4
+
+wrong*: 0
+
+aggressive: 4
+
+agreeable: 2
+
+ambitious: 3
+
+brave: 4
+
+calm: 1
+
+delightful: 3
+
+eager: 2
+
+faithful: 3
+
+gentle: 2
+
+happy: 3
+
+jolly: 2
+
+kind: 2
+
+lively: 3
+
+nice: 1
+
+obedient: 2
+
+polite: 2
+
+proud: 3
+
+silly: 2
+
+thankful: 2
+
+victorious: 4
+
+witty: 3
+
+wonderful: 4
+
+zealous: 4
+
+angry: 4
+
+bewildered: 3
+
+clumsy: 2
+
+defeated: 2
+
+embarrassed: 2
+
+fierce: 4
+
+grumpy: 2
+
+helpless: 3
+
+itchy*: 0
+
+jealous: 3
+
+lazy: 2
+
+mysterious: 3
+
+nervous: 3
+
+obnoxious: 3
+
+panicky: 3
+
+pitiful: 2
+
+repulsive: 4
+
+scary: 4
+
+thoughtless: 2
+
+uptight: 3
+
+worried: 3
+
+broad*: 0
+
+chubby: 2
+
+crooked: 2
+
+curved*: 0
+
+deep: 3
+
+flat*: 0
+
+high*: 0
+
+hollow: 2
+
+low: 1
+
+narrow: 2
+
+refined*: 0
+
+round*: 0
+
+shallow: 2
+
+skinny: 2
+
+square*: 0
+
+steep: 3
+
+straight*: 0
+
+wide: 1
+
+big*: 0
+
+colossal: 5
+
+fat: 2
+
+gigantic: 4
+
+great: 3
+
+huge: 4
+
+immense: 5
+
+large*: 0
+
+little*: 0
+
+mammoth: 5
+
+massive: 5
+
+microscopic: 4
+
+miniature: 3
+
+petite: 2
+
+puny: 2
+
+scrawny: 2
+
+short*: 0
+
+small*: 0
+
+tall*: 0
+
+teeny: 2
+
+tiny: 2
+
+crashing: 4
+
+deafening: 5
+
+echoing: 3
+
+faint: 1
+
+harsh: 3
+
+hissing: 2
+
+howling: 3
+
+loud*: 0
+
+melodic: 2
+
+noisy: 3
+
+purring: 2
+
+quiet*: 0
+
+rapping: 2
+
+raspy: 3
+
+rhythmic: 2
+
+screeching: 4
+
+shrilling: 4
+
+squeaking: 2
+
+thundering: 5
+
+tinkling: 1
+
+wailing: 3
+
+whining: 2
+
+whispering: 1
+
+ancient*: 0
+
+brief*: 0
+
+early*: 0
+
+fast*: 0
+
+future*: 0
+
+past*: 0
+
+late*: 0
+
+long*: 0
+
+modern*: 0
+
+old*: 0
+
+old-fashioned: 2
+
+prehistoric*: 0
+
+quick: 2
+
+rapid*: 0
+
+short*: 0
+
+slow*: 0
+
+swift: 3
+
+young*: 0
+
+acidic*: 0
+
+bitter: 2
+
+cool*: 0
+
+creamy: 1
+
+delicious: 4
+
+disgusting: 4
+
+fresh: 2
+
+greasy: 2
+
+juicy: 3
+
+hot*: 0
+
+moldy: 3
+
+nutritious*: 0
+
+nutty: 2
+
+putrid: 5
+
+rancid: 4
+
+ripe: 2
+
+rotten: 4
+
+salty*: 0
+
+savory: 3
+
+sour: 3
+
+spicy: 3
+
+spoiled: 3
+
+stale: 2
+
+sweet: 2
+
+tangy: 3
+
+tart: 2
+
+tasteless: 2
+
+tasty: 3
+
+yummy: 2
+
+breezy: 1
+
+bumpy: 2
+
+chilly: 2
+
+cold*: 0
+
+cuddly: 2
+
+damaged*: 0
+
+damp*: 0
+
+dirty*: 0
+
+dry*: 0
+
+flaky: 2
+
+fluffy: 2
+
+freezing: 4
+
+greasy: 2
+
+icy: 2
+
+loose*: 0
+
+melted: 2
+
+prickly: 3
+
+rough*: 0
+
+shaggy: 2
+
+sharp: 3
+
+slimy: 3
+
+sticky: 3
+
+strong*: 0
