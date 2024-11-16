@@ -70,10 +70,11 @@ func loadData() {
 }
 
 type Article struct {
-	Words      int
-	Paragraphs int
-	Score      int
-	URL        string
+	Words        int
+	wordsChecked int
+	Paragraphs   int
+	Score        int
+	URL          string
 }
 
 func scrape() {
@@ -81,7 +82,6 @@ func scrape() {
 	paragraphCount := 0
 	wordsChecked := 0
 	score := 0
-	quoteCount := 0
 
 	c := colly.NewCollector()
 
@@ -97,21 +97,10 @@ func scrape() {
 		fmt.Println("Visited", r.Request.URL)
 	})
 	//CNN: ".vossi-paragraph"
-	c.OnHTML(".article-body p", func(e *colly.HTMLElement) {
+	//FOX: ".article-body p"
+	c.OnHTML(".paragraph", func(e *colly.HTMLElement) {
 		fmt.Println(e.Text)
 		split := strings.Split(e.Text, " ")
-
-		possibleQuote := strings.Contains(split[0], `"`)
-		if possibleQuote {
-			endingQuote := strings.Contains(split[len(split)-1], `"`)
-			isQuote := strings.Contains(split[len(split)-1], "said.")
-
-			if endingQuote || isQuote {
-				fmt.Println("QUOTE ALERT!!!")
-				quoteCount++
-			}
-			//skip this paragraph
-		}
 		//we need _ here because golang is expecting us to care about the index, we dont here so we use _
 		for _, currentWord := range split {
 			value, exists := adjectiveMap[currentWord]
@@ -119,22 +108,27 @@ func scrape() {
 				wordsChecked++
 				score += value
 			}
-			wordCount++
 		}
+		wordCount++
 		paragraphCount++
 	})
 
 	c.OnScraped(func(r *colly.Response) {
 		fmt.Println("Finished", r.Request.URL)
 	})
+
 	//CNN
-	//c.Visit("https://www.cnn.com/2024/11/14/politics/todd-blanche-deputy-attorney-general/index.html")
-	c.Visit("https://www.foxnews.com/us/special-education-teacher-resigns-apologizes-viral-video-threatening-trump-voters-sparks-backlash")
+	c.Visit("https://www.cnn.com/2024/11/14/politics/elon-musk-doge-trump/index.html")
+
+	//FOX
+	//c.Visit("https://www.foxnews.com/us/special-education-teacher-resigns-apologizes-viral-video-threatening-trump-voters-sparks-backlash")
 
 	// c.OnHTML("a[href]", func(e *colly.HTMLElement) {
 	// 	e.Request.Visit(e.Attr("href"))
 	// })
 
-	fmt.Println(wordCount, paragraphCount, wordsChecked, score)
-	fmt.Println("quotes: ", quoteCount)
+	fmt.Println("Total words: ", wordCount)
+	fmt.Println("Total paragraphs: ", paragraphCount)
+	fmt.Println("Words measured: ", wordsChecked)
+	fmt.Println("Score: ", score)
 }
